@@ -16,7 +16,13 @@
       </ul>
         <br><br>
         <p><strong>Generate a random number in a range of your choice. Simply input the range and click 'Generate!'.</strong></p>
-        <form action
+        <div id="randomNumberLimits">
+          <form method="post" action="/randomnumber">
+            <label for="lowerLimit">Lower limit:</label><input type="text" name="lowerLimit" value=""><br><br>
+            <label for="upperLimit">Upper limit:</label><input type="text" name="upperLimit" value="">
+          </form>
+        </div>
+        <br><br>
         <img id='Numbers' src='./Images/Numbers.png' align="center">
     </body>
 </html>
