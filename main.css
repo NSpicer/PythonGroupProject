@@ -50,3 +50,12 @@ body {
   padding-right: 18vw;
   text-align: left;
 }
+#Dice {
+  width: 30vw;
+}
+#Numbers {
+  width: 30vw;
+}
+#Coin {
+  width: 10vw;
+}
