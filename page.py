@@ -5,15 +5,15 @@ app = Flask("Generator")
 def home():
 	return render_template("index.html")
 
-@app.route("/cointoss/")
+@app.route("/cointoss")
 def coin():
 	return render_template("CoinTossPage.html")
 
-@app.route("/diceroll/")
+@app.route("/diceroll")
 def dice():
 	return render_template("DiceRoll.html")
 
-@app.route("/cointoss/")
+@app.route("/rnumber")
 def number():
 	return render_template("NumberGenerator.html")
 
