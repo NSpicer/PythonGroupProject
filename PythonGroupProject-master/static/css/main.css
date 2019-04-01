@@ -42,6 +42,7 @@ body {
   height: 100%;
   color: #3b3b3b;
   text-align: center;
+  font-size: 10vw;
 }
 .container {
   padding-top: 1.5vw;

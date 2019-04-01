@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <title>Random Generator</title>
-            <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+        <title>Random Generator</title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
     </head>
     <body>
       <div id='Title'>
@@ -22,7 +22,7 @@
           <p>Minimum value: <input type="text" name="min" id="b"></p>
           <p><input type="submit" name="Generate" value="Generate!" class="button" style="border:none;"></p>
         </form><br>
-        
+
         <p><img id='Numbers' src="{{ url_for('static',filename='Images/Numbers.png') }}" align="center"></p>
     </body>
 </html>
