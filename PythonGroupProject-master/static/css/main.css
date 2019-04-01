@@ -59,12 +59,16 @@ body {
 #Coin {
   width: 10vw;
 }
-
+#Heads {
+  width: 5px;
+}
+#Tails {
+  width: 10vw;
+}
 .button {
-  font: bold 11px "Courier New";
+  font: bold "Courier New";
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
-  padding: 2px 6px 2px 6px;
   text-align: center;
 }
