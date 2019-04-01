@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=/>Home</a></li>
+        <li><a href=/rnumber>Random Number</a></li>
+        <li><a href=/cointoss><strong>Coin Toss</strong></a></li>
+        <li><a href=/diceroll>Dice Roll</a></li>
+      </ul>
+        <br><br>
+        {% if t > 0.5  %}
+   				<p>Tails!</p>
+          <p><img id='Tails' src="{{ url_for('static',filename='Images/tails.png') }}" align="center"></p>
+   		{% else %}
+   				<p>Heads!</p>
+          <p><img id='Heads' src="{{ url_for('static',filename='Images/heads.png') }}" align="center"></p>
+   		{% endif %}
+   		<p><a href="/cointoss" class="button">Toss Again!</a></p>
+	</body>
+</html>

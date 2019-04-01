@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=/>Home</a></li>
+        <li><a href=/rnumber>Random Number</a></li>
+        <li><a href=/cointoss>Coin Toss</a></li>
+        <li><a href=/diceroll><strong>Dice Roll</strong></a></li>
+      </ul>
+        <br><br>
+        <p><strong>Click the 'Roll' button to randomly roll the dice.</strong></p>
+        <p><a href="/diceroll_num" class="button">Roll</a></p>
+        <img id='Dice' src="{{ url_for('static',filename='Images/Dice.png') }}" align="center">
+    </body>
+</html>
