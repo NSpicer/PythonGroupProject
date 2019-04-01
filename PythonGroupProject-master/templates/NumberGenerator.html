@@ -16,13 +16,11 @@
       </ul>
         <br><br>
         <p><strong>Generate a random number in a range of your choice. Simply input the range and click 'Generate!'.</strong></p><br>
-
         <form action = "http://localhost:5000/rnumber_result" method = "POST">
           <p>Maximum value: <input type="text" name="max" id="a"></p>
           <p>Minimum value: <input type="text" name="min" id="b"></p><br>
           <p><input type="submit" name="Generate" value="Generate!" class="button" style="border:none;"></p>
-        </form><br><br>
-
+        </form><br>
         <p><img id='Numbers' src="{{ url_for('static',filename='Images/Numbers.png') }}" align="center"></p>
     </body>
 </html>

@@ -52,7 +52,7 @@ body {
   text-align: left;
 }
 #Dice {
-  width: 30vw;
+  width: 25vw;
 }
 #Numbers {
   width: 30vw;
@@ -70,8 +70,15 @@ body {
   font: bold;
   font-family: "Courier New";
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
+  background-color: #043789;
+  color: #ffffff;
   text-align: center;
   font-size: 2vw;
+  padding: 5px;
+  border-radius: 10px;
+}
+#result {
+  font-size: 6vw;
+  font-weight: bold;
+  color: #043789;
 }
