@@ -19,9 +19,15 @@
         <div id="randomNumberLimits">
           <form method="post" action="/randomnumber">
             <label for="lowerLimit">Lower limit:</label><input type="text" name="lowerLimit" value=""><br><br>
-            <label for="upperLimit">Upper limit:</label><input type="text" name="upperLimit" value="">
+            <label for="upperLimit">Upper limit:</label><input type="text" name="upperLimit" value=""><br><br>
+            <input type="submit" value ="Generate!">
           </form>
         </div>
+        {% if name %}
+        <p>Random Number = {{ name }}</p>
+        {% else %}
+        <p></p>
+        {% endif %}
         <br><br>
         <img id='Numbers' src='./Images/Numbers.png' align="center">
     </body>

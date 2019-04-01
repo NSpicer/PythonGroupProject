@@ -4,15 +4,14 @@ from flask import Flask, render_template, request
 
 app = Flask("Numbers")
 
-@app.route("/randomnumber", methods=["POST"])
-
+@app.route("/randomnumber", methods=["POST", "GET"])
 def random_numbers():
-	form_data = request.form
-	print("What is the min and max of your random number?")
-	a = int(lowerLimit)
-	b = int(upperLimit)
-
+	a = request.form['lowerLimit']
+	b = request.form['upperLimit']
+	a = int(a)
+	b = int(b)
 	number = random.randint(a, b)
-	print number
+	return render_template("NumberGenerator.html", name = number)
+
 
 random_numbers()
