@@ -17,14 +17,14 @@
         <br><br>
         <p><strong>Generate a random number in a range of your choice. Simply input the range and click 'Generate!'.</strong></p>
         <div id="randomNumberLimits">
-          <form method="post" action="/randomnumber">
+          <form method="post" action="/randomnumber" name="minMax">
             <label for="lowerLimit">Lower limit:</label><input type="text" name="lowerLimit" value=""><br><br>
             <label for="upperLimit">Upper limit:</label><input type="text" name="upperLimit" value=""><br><br>
             <input type="submit" value ="Generate!">
           </form>
         </div>
-        {% if name %}
-        <p>Random Number = {{ name }}</p>
+        {% if number %}
+        <p>Random Number = {{ number }}</p>
         {% else %}
         <p></p>
         {% endif %}

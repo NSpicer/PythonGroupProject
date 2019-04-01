@@ -2,16 +2,25 @@ import random
 
 from flask import Flask, render_template, request
 
-app = Flask("Numbers")
+app = Flask(__name__)
 
-@app.route("/randomnumber", methods=["POST", "GET"])
+@app.route("/templates/NumberGenerator.html", methods=["POST", "GET"])
 def random_numbers():
-	a = request.form['lowerLimit']
-	b = request.form['upperLimit']
-	a = int(a)
-	b = int(b)
-	number = random.randint(a, b)
-	return render_template("NumberGenerator.html", name = number)
+	if request.method=="POST":
+		a = int(request.form['lowerLimit'])
+		b = int(request.form['upperLimit'])
+		number = random.randint(a, b)
+		return redirect(url_for('randomNumber',
+								number=number))
+	return render_template("/NumberGenerator.html")
 
+@app.route("randomNumber", methods = ["GET"])
+def randomNumber():
+		name = request.args.get('number')
+		return render_template("/NumberGenerator.html",
+								number=number)
+
+if __name__ =="__main__":
+    app.run(debug=True, port=8080)
 
 random_numbers()
