@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/main.css') }}" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=/><strong>Home</strong></a></li>
+        <li><a href=/rnumber>Random Number</a></li>
+        <li><a href=/cointoss>Coin Toss</a></li>
+        <li><a href=/diceroll>Dice Roll</a></li>
+      </ul>
+      <div class='WrapperBlue'>
+        <br><br>
+        <p><strong>Getting that old boardgame back out and have lost the dice?</strong></p>
+        <p><strong>Want to flip a coin but just can't find one?</strong></p>
+        <p><strong>Need a random way to pick a number?</strong></p><br>
+        <p>Then look no further! This website provides easy-to-use unbiased random generators for your every need.</p><br>
+        <img id='Dice' src="{{ url_for('static', filename='Images/Dice.png') }}" align="center">
+      </div>
+    </body>
+</html>

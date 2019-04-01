@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=/>Home</a></li>
+        <li><a href=/rnumber>Random Number</a></li>
+        <li><a href=/cointoss><strong>Coin Toss</strong></a></li>
+        <li><a href=/diceroll>Dice Roll</a></li>
+      </ul>
+        <br><br>
+        <p><strong>Hit the 'Toss!' button to flip the coin. Heads or tails, which will it be?</strong></p>
+        <img id='Coin' src="{{ url_for('static',filename='Images/Coin.jpg') }}" align="center">
+
+
+    </body>
+</html>
