@@ -17,10 +17,10 @@
         <br><br>
         {% if t > 0.5  %}
    				<p>Tails!</p>
-          <p><img id='Tails' src="{{ url_for('static',filename='Images/tails.png') }}" align="center"></p>
+          <p><img id='Tails' src="{{ url_for('static',filename='Images/tails.png') }}" align="center" width="250vw"></p>
    		{% else %}
    				<p>Heads!</p>
-          <p><img id='Heads' src="{{ url_for('static',filename='Images/heads.png') }}" align="center"></p>
+          <p><img id='Heads' src="{{ url_for('static',filename='Images/heads.png') }}" align="center" width="250vw"></p>
    		{% endif %}
    		<p><a href="/cointoss" class="button">Toss Again!</a></p>
 	</body>
