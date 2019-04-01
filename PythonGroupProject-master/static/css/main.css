@@ -1,10 +1,10 @@
-/*#Title {
+#Title {
   background-color:#043789;
   background-size: cover;
   font-family: "Courier New";
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 0px;
 }
 h1 {
@@ -42,7 +42,7 @@ body {
   height: 100%;
   color: #3b3b3b;
   text-align: center;
-  font-size: 10vw;
+  font-size: 1.2vw;
 }
 .container {
   padding-top: 1.5vw;
@@ -61,18 +61,17 @@ body {
   width: 10vw;
 }
 #Heads {
-  width: 5px;
+  width: 10vw;
 }
 #Tails {
   width: 10vw;
 }
 .button {
-  font: bold "Courier New";
+  font: bold;
+  font-family: "Courier New";
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
   text-align: center;
-}
-a.button {
-  font-size: 300px;
+  font-size: 2vw;
 }
