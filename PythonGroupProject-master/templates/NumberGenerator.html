@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=/>Home</a></li>
+        <li><a href=/rnumber><strong>Random Number</strong></a></li>
+        <li><a href=/cointoss>Coin Toss</a></li>
+        <li><a href=/diceroll>Dice Roll</a></li>
+      </ul>
+        <br><br>
+        <p><strong>Generate a random number in a range of your choice. Simply input the range and click 'Generate!'.</strong></p>
+
+        <form action = "http://localhost:5000/rnumber_result" method = "POST">
+          <p>Max</p>
+          <p><input type="text" name="max" id="a"></p>
+          <p>Min</p>
+          <p><input type="text" name="min" id="b"></p>
+          <p><input type="submit" name="Generate"></p>
+        </form>
+
+    </body>
+</html>
