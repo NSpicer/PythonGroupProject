@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Random Generator</title>
+            <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+      <div id='Title'>
+        <h1>Random Generators</h1>
+      </div>
+      <ul class='navgrey'>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=NumberGenerator.html><strong>Random Number</strong></a></li>
+        <li><a href=CoinToss.html>Coin Toss</a></li>
+        <li><a href=DiceRoll.html>Dice Roll</a></li>
+      </ul>
+        <br><br>
+        {% if number %}
+        <p>Your random number is {{ number }}</p>
+        {% else %}
+        <p></p>
+        {% endif %}
+        <br><br>
+        <img id='Numbers' src='../Images/Numbers.png' align="center">
+    </body>
+</html>
